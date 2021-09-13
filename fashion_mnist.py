@@ -33,18 +33,6 @@ label_names = ['T-shirt', 'Trouser', 'Pullover', 'Dress', 'Coat',
 num_train, num_test = metadata.splits['train'].num_examples, metadata.splits['test'].num_examples
 print(num_train, num_test)
 
-# Plot single image
-
-# for image, label in testing_set.take(1):
-#         break
-
-# image = image.numpy().reshape((28, 28))
-# plt.figure()
-# plt.imshow(image, cmap=plt.cm.binary)
-# plt.colorbar()
-# plt.grid(False)
-# plt.show()
-
 
 # Set up layers of the model
 model = tf.keras.Sequential([
